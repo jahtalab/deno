@@ -101,7 +101,7 @@ pub struct Worker {
   // Following fields are pub because they are accessed
   // when creating a new WebWorker instance.
   pub(crate) internal_channels: WorkerChannelsInternal,
-  pub(crate) js_runtime: JsRuntime,
+  pub js_runtime: JsRuntime,
   pub(crate) name: String,
   should_break_on_first_statement: bool,
   waker: AtomicWaker,
